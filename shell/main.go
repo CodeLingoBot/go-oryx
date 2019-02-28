@@ -82,7 +82,7 @@ func checkApi(cmd *exec.Cmd, api string, max int, retry time.Duration) (err erro
 	return
 }
 
-// retrieve the object from version "major.minor.revision-extra"
+// RetrieveVersion retrieves the object from version "major.minor.revision-extra"
 func RetrieveVersion(version string) (ver *SrsVersion, err error) {
 	ver = &SrsVersion{}
 

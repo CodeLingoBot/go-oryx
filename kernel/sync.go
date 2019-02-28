@@ -92,7 +92,7 @@ func (v *WorkerGroup) QuitForSignals(ctx ol.Context, signals ...os.Signal) {
 	}()
 }
 
-// start new goroutine to run pfn.
+// ForkGoroutine starts new goroutine to run pfn.
 // @remark the worker group will quit when each pfn done.
 // @remark cleanup should never be nil.
 func (v *WorkerGroup) ForkGoroutine(pfn func(), cleanup func()) {
